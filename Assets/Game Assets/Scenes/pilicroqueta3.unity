@@ -767,12 +767,12 @@ GameObject:
   - component: {fileID: 534815824}
   - component: {fileID: 534815823}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: TeEncontreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &534815822
 RectTransform:
   m_ObjectHideFlags: 0
@@ -789,7 +789,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 17, y: -190}
+  m_AnchoredPosition: {x: 17, y: -137}
   m_SizeDelta: {x: -1112, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &534815823
@@ -1467,8 +1467,9 @@ GameObject:
   - component: {fileID: 1055395632}
   - component: {fileID: 1055395631}
   - component: {fileID: 1055395630}
+  - component: {fileID: 1055395634}
   m_Layer: 0
-  m_Name: Cube (5)
+  m_Name: DetectorProximidad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1489,7 +1490,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1560,6 +1561,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 37.24, z: 0}
+--- !u!114 &1055395634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055395629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5c4ca285c28ad46b4d61f2ba743e31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObject: {fileID: 534815821}
 --- !u!1 &1124044725
 GameObject:
   m_ObjectHideFlags: 0
@@ -2848,7 +2862,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.224
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
