@@ -7,9 +7,9 @@ public class Teletransporte : MonoBehaviour
 {
     void OnTriggerEnter(Collider c){
         if (c.gameObject.CompareTag("Player")){
-            bool tieneLlave = c.gameObject.GetComponent<Inventario>().HasItem("LlavePoder");
-            if (tieneLlave){
-                SceneManager.LoadScene("pueblitorenvacion3");
+            bool tieneOnigiri = c.gameObject.GetComponent<Inventario>().HasItem("Onigiri");
+            if (tieneOnigiri){
+                SceneManager.LoadScene("pilicroqueta3");
             }
         }
     }
